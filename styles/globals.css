@@ -1,26 +1,26 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background-color: #030205;
+  color: #8480ae;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+@layer components {
+  .yellow-button {
+    @apply rounded-full shadow-md bg-yellow px-3 py-2 text-black
   }
-  body {
-    color: white;
-    background: black;
+
+  .blue-button {
+    @apply rounded-full bg-blue px-5 py-3 text-white hover:bg-hover-blue border border-blue
+  }
+
+  .card-button {
+    @apply rounded-full bg-hover-blue px-5 py-2 text-white
+  }
+
+  .transparent-button {
+    @apply rounded-full px-5 py-3 text-white hover:text-hover-blue
   }
 }
