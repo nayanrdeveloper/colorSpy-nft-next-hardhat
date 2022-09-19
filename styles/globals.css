@@ -23,4 +23,8 @@ body{
   .transparent-button {
     @apply rounded-full px-5 py-3 text-white hover:text-hover-blue
   }
+
+  .input-border{
+    @apply block rounded-lg bg-input-bg border-2 h-12 text-white2 p-2 border-input-border focus:text-white2 focus:border focus:border-[rgba(194,212,248,.4)] focus:outline-none
+  }
 }

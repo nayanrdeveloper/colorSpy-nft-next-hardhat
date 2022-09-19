@@ -15,7 +15,9 @@ module.exports = {
         'card-color': "#1f0757",
         'white2': "#c2d4f8",
         'dark1': "#8480ae",
-        'light-blue': "rgba(13, 110, 253, 1)"
+        'light-blue': "rgba(13, 110, 253, 1)",
+        'input-bg': '#1f0757',
+        'input-border': 'rgba(194,212,248,.15)',
       }
     },
     container: {
