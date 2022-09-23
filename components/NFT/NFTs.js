@@ -36,8 +36,8 @@ function NFTs() {
     <div className="mt-20 container">
       <h3 className="text-4xl text-white2">Editors Picks</h3>
       <div className="grid grid-cols-4 gap-5 mt-10">
-        {NFTList.map((nft) => {
-          return <NFTCard key={nft} nftData={nft} />;
+        {NFTList.map((nft,index) => {
+          return <NFTCard key={index} nftData={nft} />;
         })}
       </div>
     </div>

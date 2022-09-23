@@ -45,8 +45,8 @@ function Category() {
       <h3 className="text-4xl text-white2">Browse by category</h3>
       <div className="grid grid-cols-4 gap-5 mt-10">
         {
-            categoryList.map((categoryData) => {
-                return <CategoryCard key={categoryData.name} data={categoryData} />
+            categoryList.map((categoryData,index) => {
+                return <CategoryCard key={index} data={categoryData} />
             })
         }
       </div>
